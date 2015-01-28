@@ -29,7 +29,7 @@
 \definecolor{adjective}{RGB}{103,81,120}
 \definecolor{noun}{RGB}{190,103,93}
 \definecolor{predicateverb}{RGB}{176,161,118}
-\definecolor{particle}{RGB}{62,23,85}
+\definecolor{article}{RGB}{62,23,85}
 
 \begin{document}
     \begin{sentencediagram}{It was a bright cold day in April, and the clocks were striking thirteen.}{George Orwell}{1984}
@@ -46,7 +46,7 @@
             \draw[ultra thick] (-0.05, 1.75) -- (1.45, 0.25)
                 node[above=-0.06cm, sloped, pos=0.6, text=adjective]{\strut cold};
             \draw[ultra thick] (1, 1.75) -- (2.05, 0.7)
-                node[above=-0.06cm, sloped, pos=0.6, text=particle]{\strut a};
+                node[above=-0.06cm, sloped, pos=0.6, text=article]{\strut a};
             \draw[ultra thick] (2.05, 1.75) -- (3.1, 0.7)
                 node[above=-0.06cm, sloped, pos=0.7, text=preposition]{\strut in};
 
@@ -65,7 +65,17 @@
             \draw[ultra thick] (-1.85, -0.5) -- (-1.85, -1.8);
             \draw[ultra thick] (2.5, -1.25) -- (2.5, -0.5);
             \draw[ultra thick] (-4, -1.25) -- (-2.25, -3.0)
-                node[sloped, pos=.5, text=particle]{\strut the};
+                node[sloped, pos=.5, text=article]{\strut the};
+        \end{tikzpicture}
+    \end{sentencediagram}
+    
+    \begin{sentencediagram}{All of this happened, more or less.}{Kurt Vonnegut}{Slaughterhouse Five}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (-5, 2) -- (4, 2)
+                node[pos=.03, text=subjectnoun]{\strut All}
+                node[pos=.07, text=predicateverb]{\strut happened};
+            \draw[ultra thick] (-0.5, 2.75) -- (-0.5, 1.5);
         \end{tikzpicture}
     \end{sentencediagram}
 \end{document}
