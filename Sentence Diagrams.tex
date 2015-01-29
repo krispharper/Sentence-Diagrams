@@ -11,27 +11,58 @@
         \begin{center}
             {
                 \fontfamily{cmr}\selectfont
-                #1 \newline
+                #1
             }
 
-            \footnotesize #2, \textit{#3}
+            \vspace{0.4cm}
+            \footnotesize #2, \textit{#3} \\
             \vspace{0.5cm}
             \Large 
     }
-    {\end{center}}
+    {
+        \end{center}
+        \clearpage
+    }
 
 \definecolor{subjectnoun}{RGB}{106,120,132}
 \definecolor{copula}{RGB}{124,139,111}
 \definecolor{subjectcomplement}{RGB}{77,47,13}
 \definecolor{conjunction}{RGB}{56,84,129}
-\definecolor{preposition}{RGB}{32,129,159}
+\definecolor{preposition}{RGB}{64,140,174}
 \definecolor{directobject}{RGB}{231,51,143}
 \definecolor{adjective}{RGB}{103,81,120}
 \definecolor{noun}{RGB}{190,103,93}
 \definecolor{predicateverb}{RGB}{176,161,118}
 \definecolor{article}{RGB}{62,23,85}
+\definecolor{pronoun}{RGB}{0,0,0}
+\definecolor{adverb}{RGB}{133,188,114}
 
 \begin{document}
+    \begin{sentencediagram}{It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+
+        \end{tikzpicture}
+
+    \end{sentencediagram}
+
+    \begin{sentencediagram}{All this happened, more or less.}{Kurt Vonnegut}{Slaughterhouse Five}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (-4.5, 2) -- (3, 2)
+                node[pos=0.27, text=subjectnoun]{\strut All}
+                node[pos=0.77, text=predicateverb]{\strut happened};
+            \draw[ultra thick] (-0.5, 2.75) -- (-0.5, 1.5);
+
+            \draw[ultra thick] (-3.5, 2) -- (-2, 0.5)
+                node[sloped, pos=0.6, text=preposition]{\strut (of)};
+            \draw[ultra thick] (-2, 0.5) -- (-0.25, 0.5)
+                node[pos=0.5, text=pronoun]{\strut this};
+            \draw[ultra thick] (0.5, 2) -- (3.25, -0.75)
+                node[sloped, pos=0.55, text=adverb]{\strut more or less};
+        \end{tikzpicture}
+    \end{sentencediagram}
+
     \begin{sentencediagram}{It was a bright cold day in April, and the clocks were striking thirteen.}{George Orwell}{1984}
         \begin{tikzpicture}[scale=1.2]
             \tikzstyle{every node} = [above=-0.15cm]
@@ -66,16 +97,6 @@
             \draw[ultra thick] (2.5, -1.25) -- (2.5, -0.5);
             \draw[ultra thick] (-4, -1.25) -- (-2.25, -3.0)
                 node[sloped, pos=.5, text=article]{\strut the};
-        \end{tikzpicture}
-    \end{sentencediagram}
-    
-    \begin{sentencediagram}{All of this happened, more or less.}{Kurt Vonnegut}{Slaughterhouse Five}
-        \begin{tikzpicture}
-            \tikzstyle{every node} = [above=-0.15cm]
-            \draw[ultra thick] (-5, 2) -- (4, 2)
-                node[pos=.03, text=subjectnoun]{\strut All}
-                node[pos=.07, text=predicateverb]{\strut happened};
-            \draw[ultra thick] (-0.5, 2.75) -- (-0.5, 1.5);
         \end{tikzpicture}
     \end{sentencediagram}
 \end{document}
