@@ -99,4 +99,18 @@
                 node[sloped, pos=.5, text=article]{\strut the};
         \end{tikzpicture}
     \end{sentencediagram}
+
+    \begin{sentencediagram}{Call me Ishmael}{Herman Melville}{Moby Dick}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (-3, 0) -- (3, 0)
+                node[pos=0.2, text=subjectnoun]{\strut (you)}
+                node[pos=0.4, text=predicateverb]{\strut Call}
+                node[pos=0.6, text=directobject]{\strut me}
+                node[pos=0.8, text=noun]{\strut Ishmael};
+            \draw[ultra thick] (-1.5, 0.75) -- (-1.5, -0.55);
+            \draw[ultra thick] (-0.5, 0.75) -- (-0.5, 0);
+            \draw[ultra thick] (-0.25, 0.75) -- (1, 0);
+        \end{tikzpicture}
+    \end{sentencediagram}
 \end{document}
