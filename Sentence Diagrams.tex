@@ -36,16 +36,33 @@
 \definecolor{article}{RGB}{62,23,85}
 \definecolor{pronoun}{RGB}{0,0,0}
 \definecolor{adverb}{RGB}{133,188,114}
+\definecolor{modalverb}{RGB}{223,32,88}
 
 \begin{document}
     \begin{sentencediagram}{It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
         \begin{tikzpicture}
             \tikzstyle{every node} = [above=-0.15cm]
-            \draw[ultra thick] (-8, 3) -- (3, 3);
+            \draw[ultra thick] (-8, 3) -- (6, 3);
+                node[pos=0.5, text=modalverb]{\srut must};
+            \draw[ultra thick] (-2.25, 3.75) -- (-2.25, 2.5);
+
             \draw[ultra thick] (-7, 3) -- (-4.5, 0.5)
                 node[sloped, pos=0.5, text=preposition]{\strut in};
-            \draw[ultra thick] (-4.5, 0.5) -- (-2, 0.5)
+            \draw[ultra thick] (-5, 3) -- (-4, 2)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw[ultra thick]  (-4, 3) -- (-2.5, 1.5)
+                node[sloped, pos=0.6, text=adjective]{\strut single};
+            \draw[ultra thick] (-4.5, 0.5) -- (-1.5, 0.5)
                 node[pos=0.5, text=noun]{\strut possession};
+
+            \draw[ultra thick] (-3.5, 0.5) -- (-2, -1)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw[ultra thick] (-2, -1) -- (0.75, -1)
+                node[pos=0.5, text=noun]{\strut fortune};
+            \draw[ultra thick] (-1.5, -1) -- (0, -2.5)
+                node[sloped, pos=0.6, text=adjective]{\strut good};
+            \draw[ultra thick] (-0.25, -1) -- (0.75, -2)
+                node[sloped, pos=0.6, text=article]{\strut a};
 
 
         \end{tikzpicture}
