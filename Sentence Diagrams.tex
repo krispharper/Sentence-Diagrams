@@ -41,6 +41,7 @@
 \definecolor{article}{RGB}{62,23,85}
 \definecolor{pronoun}{RGB}{0,0,0}
 \definecolor{adverb}{RGB}{133,188,114}
+\definecolor{infinitiveverb}{RGB}{101,154,148}
 
 \begin{document}
     \begin{sentencediagram}{1.75}{2}{It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
@@ -122,6 +123,30 @@
             \draw[ultra thick] (-2, 0.75) -- (-2, -0.55);
             \draw[ultra thick] (-0.5, 0.75) -- (-0.5, 0);
             \draw[ultra thick] (0.75, 0.75) -- (1.5, 0);
+        \end{tikzpicture}
+    \end{sentencediagram}
+
+    \begin{sentencediagram}{2.25}{2.5}{It was a pleasure to burn.}{Ray Bradbury}{Fahrenheit 451}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (0.1, 1.25) -- (0.7, 1.25)
+                node[pos=0.5, text=subjectnoun]{\strut It};
+
+            \draw[ultra thick] (-4, 2.25) -- (-3, 1.25)
+                node[above=-0.06cm, sloped, pos=0.5]{\strut to}; % Need to find out what this is
+            \draw[ultra thick] (-3, 1.25) -- (-1.4, 1.25)
+                node[pos=0.5, text=infinitiveverb]{\strut burn};
+            \draw[ultra thick] (-2.2, 1.25) -- (-2.2, 0.25);
+            \draw[ultra thick] (-2.2, 0.25) -- (-1.95, 0);
+            \draw[ultra thick] (-2.2, 0.25) -- (-2.45, 0);
+
+            \draw[ultra thick] (-3, 0) -- (4, 0)
+                node[pos=0.35, text=copula]{\strut was}
+                node[pos=0.78, text=subjectcomplement]{\strut pleasure};
+            \draw[ultra thick] (-1.5, 0.75) -- (-1.5, -0.55);
+            \draw[ultra thick] (0.25, 0.75) -- (1, 0);
+            \draw[ultra thick] (2, 0) -- (3, -1)
+                node[above=-0.06cm, sloped, pos=0.65, text=article]{\strut a};
         \end{tikzpicture}
     \end{sentencediagram}
 \end{document}
