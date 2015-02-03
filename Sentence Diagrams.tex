@@ -1,27 +1,32 @@
 \documentclass{article}
-\usepackage[papersize={7in,5in}, top=1in, bottom=0in, left=1in, right=1in]{geometry}
+\usepackage[letterpaper, landscape, margin=0in]{geometry}
+\usepackage{showframe}
 \usepackage{tikz}
 \usepackage[default]{sourcesanspro}
 \usepackage[T1]{fontenc}
 
 \pagenumbering{gobble}
 
-\newenvironment{sentencediagram}[3]
+\newenvironment{sentencediagram}[5]
     {
+        \newgeometry{top=#1in, bottom=#1in, left=#2in, right=#2in}
+        \vspace*{\fill}
         \begin{center}
             {
                 \fontfamily{cmr}\selectfont
-                #1
+                #3
             }
 
             \vspace{0.4cm}
-            \footnotesize #2, \textit{#3} \\
+            \footnotesize #4, \textit{#5} \\
             \vspace{0.5cm}
             \Large 
     }
     {
         \end{center}
+        \vspace*{\fill}
         \clearpage
+        \restoregeometry
     }
 
 \definecolor{subjectnoun}{RGB}{106,120,132}
@@ -37,13 +42,14 @@
 \definecolor{pronoun}{RGB}{0,0,0}
 \definecolor{adverb}{RGB}{133,188,114}
 \definecolor{modalverb}{RGB}{223,32,88}
+\definecolor{infinitiveverb}{RGB}{101,154,148}
 
 \begin{document}
-    \begin{sentencediagram}{It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
+    \begin{sentencediagram}{1.75}{2}{It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
         \begin{tikzpicture}
             \tikzstyle{every node} = [above=-0.15cm]
-            \draw[ultra thick] (-8, 3) -- (6, 3);
-                node[pos=0.5, text=modalverb]{\srut must};
+            \draw[ultra thick] (-8, 3) -- (6, 3)
+                node[pos=0.5, text=modalverb]{\strut must};
             \draw[ultra thick] (-2.25, 3.75) -- (-2.25, 2.5);
 
             \draw[ultra thick] (-7, 3) -- (-4.5, 0.5)
@@ -63,13 +69,10 @@
                 node[sloped, pos=0.6, text=adjective]{\strut good};
             \draw[ultra thick] (-0.25, -1) -- (0.75, -2)
                 node[sloped, pos=0.6, text=article]{\strut a};
-
-
         \end{tikzpicture}
-
     \end{sentencediagram}
 
-    \begin{sentencediagram}{All this happened, more or less.}{Kurt Vonnegut}{Slaughterhouse Five}
+    \begin{sentencediagram}{2.25}{2.5}{All this happened, more or less.}{Kurt Vonnegut}{Slaughterhouse Five}
         \begin{tikzpicture}
             \tikzstyle{every node} = [above=-0.15cm]
             \draw[ultra thick] (-4.5, 2) -- (3, 2)
@@ -86,7 +89,7 @@
         \end{tikzpicture}
     \end{sentencediagram}
 
-    \begin{sentencediagram}{It was a bright cold day in April, and the clocks were striking thirteen.}{George Orwell}{1984}
+    \begin{sentencediagram}{1.75}{2}{It was a bright cold day in April, and the clocks were striking thirteen.}{George Orwell}{1984}
         \begin{tikzpicture}[scale=1.2]
             \tikzstyle{every node} = [above=-0.15cm]
             \draw[ultra thick] (-5, 1.75) -- (3, 1.75)
@@ -120,6 +123,44 @@
             \draw[ultra thick] (2.5, -1.25) -- (2.5, -0.5);
             \draw[ultra thick] (-4, -1.25) -- (-2.25, -3.0)
                 node[sloped, pos=.5, text=article]{\strut the};
+        \end{tikzpicture}
+    \end{sentencediagram}
+
+    \begin{sentencediagram}{2.25}{2.5}{Call me Ishmael.}{Herman Melville}{Moby Dick}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (-4, 0) -- (4, 0)
+                node[pos=0.13, text=subjectnoun]{\strut (you)}
+                node[pos=0.35, text=predicateverb]{\strut Call}
+                node[pos=0.53, text=directobject]{\strut me}
+                node[pos=0.85, text=noun]{\strut Ishmael};
+            \draw[ultra thick] (-2, 0.75) -- (-2, -0.55);
+            \draw[ultra thick] (-0.5, 0.75) -- (-0.5, 0);
+            \draw[ultra thick] (0.75, 0.75) -- (1.5, 0);
+        \end{tikzpicture}
+    \end{sentencediagram}
+
+    \begin{sentencediagram}{2.25}{2.5}{It was a pleasure to burn.}{Ray Bradbury}{Fahrenheit 451}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (0.1, 1.25) -- (0.7, 1.25)
+                node[pos=0.5, text=subjectnoun]{\strut It};
+
+            \draw[ultra thick] (-4, 2.25) -- (-3, 1.25)
+                node[above=-0.06cm, sloped, pos=0.5, text=preposition]{\strut to};
+            \draw[ultra thick] (-3, 1.25) -- (-1.4, 1.25)
+                node[pos=0.5, text=infinitiveverb]{\strut burn};
+            \draw[ultra thick] (-2.2, 1.25) -- (-2.2, 0.25);
+            \draw[ultra thick] (-2.2, 0.25) -- (-1.95, 0);
+            \draw[ultra thick] (-2.2, 0.25) -- (-2.45, 0);
+
+            \draw[ultra thick] (-3, 0) -- (4, 0)
+                node[pos=0.35, text=copula]{\strut was}
+                node[pos=0.78, text=subjectcomplement]{\strut pleasure};
+            \draw[ultra thick] (-1.5, 0.75) -- (-1.5, -0.55);
+            \draw[ultra thick] (0.25, 0.75) -- (1, 0);
+            \draw[ultra thick] (2, 0) -- (3, -1)
+                node[above=-0.06cm, sloped, pos=0.65, text=article]{\strut a};
         \end{tikzpicture}
     \end{sentencediagram}
 \end{document}
