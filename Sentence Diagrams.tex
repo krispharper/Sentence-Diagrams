@@ -45,16 +45,36 @@
 \definecolor{infinitiveverb}{RGB}{101,154,148}
 
 \begin{document}
-    \begin{sentencediagram}{1.75}{2}{It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
+    \begin{sentencediagram}{1.75}{2}{It is a truth universally acknowledged, that a single man\\in possession of a good fortune, must be in want of a wife.}{Jane Austen}{Pride and Prejudice}
         \begin{tikzpicture}
             \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (2, -1.5) -- (9, -1.5)
+                node[pos=0.15, text=subjectnoun]{\strut truth}
+                node[pos=0.37, text=copula]{\strut is}
+                node[pos=0.7, text=predicateverb]{\strut acknowledged};
+            \draw[ultra thick] (2.5, -1.5) -- (3.5, -2.5)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw[ultra thick] (4, -0.75) -- (4, -2);
+            \draw[ultra thick] (6, -1.5) -- (8.5, -4)
+                node[sloped, pos=0.55, text=adverb]{\strut universally};
+
             \draw[ultra thick] (-8, 3) -- (6, 3)
-                node[pos=0.5, text=modalverb]{\strut must};
+                node[pos=0.2, text=subjectnoun]{\strut man}
+                node[pos=0.48, text=modalverb]{\strut must}
+                node[pos=0.62, text=predicateverb]{\strut (be in) want}
+                node[pos=0.87, text=directobject]{\strut wife};
             \draw[ultra thick] (-2.25, 3.75) -- (-2.25, 2.5);
+            \draw[ultra thick] (2.25, 3.75) -- (2.25, 3);
+            \draw[ultra thick] (2.5, 3) -- (4.2, 1.3)
+                node[sloped, pos=0.5, text=preposition]{\strut (of)}
+                node[sloped, pos=0.8, text=article]{\strut a};
+            \draw[loosely dotted, ultra thick] (4, 3) -- (5.5, 1.5)
+                node[sloped, pos=0.6, text=conjunction]{\strut that};
+            \draw[loosely dotted, ultra thick] (5.5, 1.5) -- (3.3, -0.7);
 
             \draw[ultra thick] (-7, 3) -- (-4.5, 0.5)
                 node[sloped, pos=0.5, text=preposition]{\strut in};
-            \draw[ultra thick] (-5, 3) -- (-4, 2)
+            \draw[ultra thick] (-5.3, 3) -- (-4.3, 2)
                 node[sloped, pos=0.6, text=article]{\strut a};
             \draw[ultra thick]  (-4, 3) -- (-2.5, 1.5)
                 node[sloped, pos=0.6, text=adjective]{\strut single};
