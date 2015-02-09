@@ -46,6 +46,51 @@
 \definecolor{verb}{RGB}{208, 139, 44}
 
 \begin{document}
+    \begin{sentencediagram}{1.75}{2}{Miss Brooke had that kind of beauty which seems to be thrown into relief by poor dress.}{George Eliot}{Middlemarch}
+        \begin{tikzpicture}
+            \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (-6, 3) -- (7, 3)
+                node[pos=0.18, text=subjectnoun]{\strut Miss Brooke}
+                node[pos=0.425, text=predicateverb]{\strut had}
+                node[pos=0.65, text=directobject]{\strut beauty};
+            \draw[ultra thick] (-1.5, 3.75) -- (-1.5, 2.5);
+            \draw[ultra thick] (0.5, 3.75) -- (0.5, 3);
+            \draw[ultra thick] (3, 3) -- (5, 1)
+                node[above=-0.06cm, sloped, pos=0.6, text=adverb]{\strut kind of};
+            \draw[ultra thick] (3.5, 2.5) -- (3, 2) -- (4, 1)
+                node[above=-0.06cm, sloped, pos=0.55, text=adjective]{\strut that};
+            \draw[loosely dotted, ultra thick] (1.5, 3) -- (2.25, 2.25) -- (-1.25, -1);
+
+            \draw[ultra thick] (-2.5, -2) -- (3.5, -2)
+                node[pos=0.18, text=pronoun]{\strut which}
+                node[pos=0.5, text=predicateverb]{\strut seems};
+            \draw[ultra thick] (-0.5, -1.25) -- (-0.5, -2.5);
+            \draw[ultra thick] (1.25, -1.25) -- (2, -2);
+
+            \draw[ultra thick] (1.25, 0) -- (2, -0.75)
+                node[sloped, pos=0.5, text=preposition]{\strut to};
+            \draw[ultra thick] (2, -0.75) -- (6, -0.75)
+                node[pos=0.2, text=infinitiveverb]{\strut be};
+            \draw[ultra thick] (3.25, 0) -- (4, -0.75);
+            \path (3.5, -0.25) -- (5, -0.75)
+                node[above=-0.06cm, sloped, pos=0.5, text=verb]{\strut thrown};
+            \draw[ultra thick] (3, -0.75) -- (3, -1.75);
+            \draw[ultra thick] (3, -1.75) -- (2.75, -2);
+            \draw[ultra thick] (3, -1.75) -- (3.25, -2);
+
+            \draw[ultra thick] (5, -0.75) -- (6.5, -2.25)
+                node[sloped, pos=0.6, text=preposition]{\strut into};
+            \draw[ultra thick] (6.5, -2.25) -- (8.5, -2.25)
+                node[pos=0.5, text=noun]{\strut relief};
+            \draw[ultra thick] (7, -2.25) -- (8.25, -3.5)
+                node[sloped, pos=0.65, text=preposition]{\strut by};
+            \draw[ultra thick] (8.25, -3.5) -- (10.5, -3.5)
+                node[pos=0.5, text=noun]{\strut dress};
+            \draw[ultra thick] (9, -3.5) -- (10.5, -5)
+                node[sloped, pos=0.6, text=adjective]{\strut poor};
+        \end{tikzpicture}
+    \end{sentencediagram}
+
     \begin{sentencediagram}{2.25}{2.5}{There was no possibility of taking a walk that day.}{Charlotte Bront\"{e}}{Jane Eyre}
         \begin{tikzpicture}
             \tikzstyle{every node} = [above=-0.15cm]
