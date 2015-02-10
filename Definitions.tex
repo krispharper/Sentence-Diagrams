@@ -1,0 +1,45 @@
+\usepackage{showframe}
+\usepackage{tikz}
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+\pagenumbering{gobble}
+
+\newenvironment{sentencediagram}[5]
+    {
+        \newgeometry{top=#1in, bottom=#1in, left=#2in, right=#2in}
+        \vspace*{\fill}
+        \begin{center}
+            {
+                \fontfamily{cmr}\selectfont
+                #3
+            }
+
+            \vspace{0.4cm}
+            \footnotesize #4, \textit{#5} \\
+            \vspace{0.5cm}
+            \Large 
+    }
+    {
+        \end{center}
+        \vspace*{\fill}
+        \clearpage
+        \restoregeometry
+    }
+
+\definecolor{subjectnoun}{RGB}{106,120,132}
+\definecolor{copula}{RGB}{124,139,111}
+\definecolor{subjectcomplement}{RGB}{77,47,13}
+\definecolor{conjunction}{RGB}{56,84,129}
+\definecolor{preposition}{RGB}{64,140,174}
+\definecolor{directobject}{RGB}{231,51,143}
+\definecolor{adjective}{RGB}{103,81,120}
+\definecolor{noun}{RGB}{190,103,93}
+\definecolor{predicateverb}{RGB}{176,161,118}
+\definecolor{article}{RGB}{62,23,85}
+\definecolor{pronoun}{RGB}{0,0,0}
+\definecolor{adverb}{RGB}{133,188,114}
+\definecolor{modalverb}{RGB}{223,32,88}
+\definecolor{infinitiveverb}{RGB}{101,154,148}
+\definecolor{verb}{RGB}{208, 139, 44}
+
+
