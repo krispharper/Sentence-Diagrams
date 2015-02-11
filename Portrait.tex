@@ -4,9 +4,60 @@
 \input{Definitions.tex}
 
 \begin{document}
-    \begin{sentencediagram}{2}{1.75}{Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.}{James Joyce}{Ulysses}
+    \begin{sentencediagram}{2}{1.75}{Stately, plump Buck Mulligan came from the stairhead, bearing\\a bowl of lather on which a mirror and a razor lay crossed.}{James Joyce}{Ulysses}
         \begin{tikzpicture}
             \tikzstyle{every node} = [above=-0.15cm]
+            \draw[ultra thick] (-4, 6) -- (5, 6)
+                node[pos=0.27, text=subjectnoun]{\strut Buck Mulligan}
+                node[pos=0.77, text=predicateverb]{\strut came};
+            \draw[ultra thick] (-3, 6) -- (-0.5, 3.5);
+            \draw[ultra thick] (-1, 6) -- (0.5, 4.5)
+                node[sloped, pos=0.6, text=adjective]{\strut plump};
+            \draw[ultra thick] (1, 6.75) -- (1, 5.5);
+            \draw[ultra thick] (2, 6) -- (5, 3)
+                node[sloped, pos=0.6, text=preposition]{\strut from};
+            \draw[ultra thick] (5, 3) -- (7.5, 3)
+                node[pos=0.5, text=noun]{\strut stairhead};
+            \draw[ultra thick] (6, 3) -- (7.3, 1.7)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw[ultra thick] (3.5, 6) -- (5.5, 4)
+                node[sloped, pos=0.6, text=adverb]{\strut Stately};
+
+            \draw[ultra thick] (-0.5, 3.5) -- (3.5, 3.5)
+                node[pos=0.7, text=directobject]{\strut bowl};
+            \path (-1, 4) -- (0.5, 3.5)
+                node[sloped, pos=0.5, text=verb]{\strut bearing};
+            \draw[ultra thick] (1, 4.25) -- (1, 3.5);
+            \draw[ultra thick] (1.5, 3.5) -- (3.5, 1.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw[ultra thick] (3.5, 1.5) -- (5.5, 1.5)
+                node[pos=0.5, text=noun]{\strut lather};
+            \draw[ultra thick] (3, 3.5) -- (4, 2.5)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw[loosely dotted, ultra thick] (5, 1.5) -- (7.5, -1) -- (6.5, -2);
+
+            \draw[ultra thick] (-3, 0) -- (0, 0)
+                node[pos=0.5, text=subjectnoun]{\strut mirror};
+            \draw[ultra thick] (-2, 0) -- (-1, -1)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw[ultra thick] (-3, -3) -- (0, -3)
+                node[pos=0.5, text=subjectnoun]{\strut razor};
+            \draw[ultra thick] (-2, -3) -- (-1, -4)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw[ultra thick] (0, 0) -- (1.5, -1.5);
+            \draw[ultra thick] (0, -3) -- (1.5, -1.5);
+            \draw[loosely dotted, ultra thick] (0, 0) -- (0, -3)
+                node[sloped, pos=0.5, text=conjunction]{\strut and};
+
+            \draw[ultra thick] (1.5, -1.5) -- (5, -1.5)
+                node[pos=0.6, text=predicateverb]{\strut lay};
+            \draw[ultra thick] (2, -0.75) -- (2, -2);
+            \draw[ultra thick] (2.5, -1.5) -- (4.5, -3.5)
+                node[sloped, pos=0.6, text=adverb]{\strut crossed};
+            \draw[ultra thick] (4, -1.5) -- (5.5, -3)
+                node[sloped, pos=0.6, text=preposition]{\strut on};
+            \draw[ultra thick] (5.5, -3) -- (7, -3)
+                node[pos=0.5, text=pronoun]{\strut which};
         \end{tikzpicture}
     \end{sentencediagram}
 \end{document}
