@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[letterpaper, landscape, left=0.5in, right=0.5in, top=2.25in, bottom=2.25in]{geometry}
+
+\input{Definitions.tex}
+\usetikzlibrary{positioning}
+
+\begin{document}
+    \Large 
+    \vspace*{\fill}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[text=subjectnoun, anchor=west] at (-11, 2.5) {\strut Subject Noun};
+            \node[text=copula, anchor=west] at (-6, 2.5) {\strut Copula};
+            \node[text=subjectcomplement, anchor=west] at (-2, 2.5) {\strut Subject Complement};
+            \node[text=conjunction, anchor=west] at (4.2, 2.5) {\strut Conjunction};
+            \node[text=noun, anchor=west] at (9, 2.5) {\strut Noun};
+            \node[text=directobject, anchor=west] at (-11, 0) {\strut Direct Object};
+            \node[text=adjective, anchor=west] at (-6, 0) {\strut Adjective};
+            \node[text=predicateverb, anchor=west] at (-2, 0) {\strut Predicate Verb};
+            \node[text=preposition, anchor=west] at (4.2, 0) {\strut Preposition};
+            \node[text=article, anchor=west] at (9, 0) {\strut Article};
+            \node[text=pronoun, anchor=west] at (-11, -2.5) {\strut Pronoun};
+            \node[text=adverb, anchor=west] at (-6, -2.5) {\strut Adverb};
+            \node[text=infinitiveverb, anchor=west] at (-2, -2.5) {\strut Infinitive Verb};
+            \node[text=modalverb, anchor=west] at (4.2, -2.5) {\strut Modal Verb};
+            \node[text=verb, anchor=west] at (9, -2.5) {\strut Verb};
+        \end{tikzpicture}
+    \end{center}
+    \vspace*{\fill}
+\end{document}
