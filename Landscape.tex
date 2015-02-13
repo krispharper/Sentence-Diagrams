@@ -4,108 +4,6 @@
 \input{Definitions.tex}
 
 \begin{document}
-    \begin{sentencediagram}{0.25}{0.5}{The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden,\\there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.}{Oscar Wilde}{The Picture of Dorian Gray}
-        \begin{tikzpicture}
-            \draw (-12, 8) -- (-5, 8)
-                node[pos=0.2, text=subjectnoun]{\strut studio}
-                node[pos=0.6, text=copula]{\strut was}
-                node[pos=0.85, text=subjectcomplement]{\strut filled};
-            \draw (-9, 8.75) -- (-9, 7.5);
-            \draw (-11, 8) -- (-9.5, 6.5)
-                node[sloped, pos=0.6, text=article]{\strut The};
-            \draw (-8, 8) -- (-6, 6)
-                node[sloped, pos=0.6, text=preposition]{\strut with};
-            \draw (-6, 6) -- (-2, 6)
-                node[pos=0.5, text=noun]{\strut odour};
-            \draw (-5.5, 6) -- (-4, 4.5)
-                node[sloped, pos=0.6, text=adjective]{\strut rich};
-            \draw (-4.3, 6) -- (-2.8, 4.5)
-                node[sloped, pos=0.6, text=article]{\strut the};
-            \draw (-3.1, 6) -- (-1.6, 4.5)
-                node[sloped, pos=0.6, text=preposition]{\strut of};
-            \draw (-1.6, 4.5) -- (0.5, 4.5)
-                node[pos=0.5, text=noun]{\strut roses};
-
-            \draw [loosely dotted] (-1, 4.5) -- (-1, 3.5);
-            \draw (-1, 3.5) -- (0, 3.5)
-                node[pos=0.55, text=conjunction]{\strut and};
-            \draw [loosely dotted] (0, 3.5) -- (0, 3);
-
-            \draw (-15, 3) -- (-7.5, 3)
-                node[pos=0.25, text=subjectnoun]{\strut scent};
-            \draw (-14.5, 3) -- (-12.5, 1)
-                node[sloped, pos=0.6, text=adjective]{\strut heavy};
-            \draw (-13.3, 3) -- (-11.8, 1.5)
-                node[sloped, pos=0.6, text=article]{\strut the};
-            \draw (-12.1, 3) -- (-10.5, 1.5)
-                node[sloped, pos=0.6, text=preposition]{\strut of};
-            \draw (-10.5, 1.5) -- (-8.5, 1.5)
-                node[pos=0.5, text=noun]{\strut lilac};
-            \draw (-9.5, 1.5) -- (-8, 0)
-                node[sloped, pos=0.6, text=article]{\strut the};
-
-            \draw (-7.5, 3) -- (-5.5, 1) -- (-7.5, -1);
-            \draw [loosely dotted] (-7.5, 3) -- (-7.5, -1)
-                node[sloped, pos=0.5, text=conjunction]{\strut or};
-
-            \draw (-15, -1) -- (-7.5, -1)
-                node[pos=0.3, text=subjectnoun]{\strut perfume};
-            \draw (-14.5, -1) -- (-12.5, -3)
-                node[above=-0.06cm, sloped, pos=0.6, text=adjective]{\strut delicate};
-            \draw (-14, -1.5) -- (-14.5, -2) -- (-13.2, -3.3)
-                node[sloped, pos=0.5, text=adverb]{\strut more};
-            \draw (-13.3, -1) -- (-11.8, -2.5)
-                node[sloped, pos=0.6, text=article]{\strut the};
-            \draw (-12.1, -1) -- (-10.5, -2.5)
-                node[sloped, pos=0.6, text=preposition]{\strut of};
-            \draw (-10.5, -2.5) -- (-7.5, -2.5)
-                node[pos=0.5, text=noun]{\strut thorn};
-            \draw (-10, -2.5) -- (-8.5, -4)
-                node[sloped, pos=0.6, text=article]{\strut the};
-            \draw (-8.8, -2.5) -- (-5.5, -5.8)
-                node[sloped, pos=0.55, text=adjective]{\strut pink-flowering};
-            
-            \draw (-0.75, 2.25) -- (0.75, 2.25)
-                node[pos=0.5, text=pronoun]{\strut there};
-            \draw (-5.5, 1) -- (2, 1)
-                node[pos=0.6, text=predicateverb]{\strut came};
-            \draw (-4, 1.75) -- (-4, 0.5);
-            \draw [loosely dotted] (-2, 1) -- (0.2, -1.2)
-                node[sloped, pos=0.5, text=conjunction]{\strut when};
-            \draw (0, 1) -- (2, -1)
-                node[sloped, pos=0.6, text=preposition]{\strut through};
-            \draw (2, -1) -- (4.5, -1)
-                node[pos=0.5, text=noun]{\strut door};
-            \draw (2.5, -1) -- (4, -2.5)
-                node[sloped, pos=0.6, text=adjective]{\strut open};
-            \draw (3.7, -1) -- (5.2, -2.5)
-                node[sloped, pos=0.6, text=article]{\strut the};
-
-            \draw (-6, -2) -- (2, -2)
-                node[pos=0.3, text=subjectnoun]{\strut wind}
-                node[pos=0.8, text=predicateverb]{\strut stirred};
-            \draw (-5.5, -2) -- (-3.5, -4)
-                node[sloped, pos=0.6, text=adjective]{\strut summer};
-            \draw (-4.3, -2) -- (-2.8, -3.5)
-                node[sloped, pos=0.6, text=adjective]{\strut light};
-            \draw (-3.1, -2) -- (-1.6, -3.5)
-                node[sloped, pos=0.6, text=article]{\strut the};
-            \draw (-1, -1.25) -- (-1, -2.5);
-            \draw (0, -2) -- (2, -4)
-                node[sloped, pos=0.6, text=preposition]{\strut amidst};
-            \draw (2, -4) -- (4.5, -4)
-                node[pos=0.5, text=noun]{\strut trees};
-            \draw (2.5, -4) -- (4, -5.5)
-                node[sloped, pos=0.6, text=article]{\strut the};
-            \draw (3.7, -4) -- (5.2, -5.5)
-                node[sloped, pos=0.6, text=preposition]{\strut of};
-            \draw (5.2, -5.5) -- (7, -5.5)
-                node[pos=0.5, text=noun]{\strut garden};
-            \draw (5.7, -5.5) -- (7.2, -7)
-                node[sloped, pos=0.6, text=article]{\strut the};
-        \end{tikzpicture}
-    \end{sentencediagram}
-
     \begin{sentencediagram}{2.25}{2.5}{There was no possibility of taking a walk that day.}{Charlotte Bront\"{e}}{Jane Eyre}
         \begin{tikzpicture}
             \draw (3.5, 4.25) -- (5, 4.25)
@@ -386,6 +284,108 @@
             \draw (-3.75, -2.75) -- (-3.75, -3.5);
             \draw (-6, -3.5) -- (-4.8, -4.7)
                 node[sloped, pos=0.6, text=adjective]{\strut not};
+        \end{tikzpicture}
+    \end{sentencediagram}
+
+    \begin{sentencediagram}{0.25}{0.5}{The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden,\\there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.}{Oscar Wilde}{The Picture of Dorian Gray}
+        \begin{tikzpicture}
+            \draw (-12, 8) -- (-5, 8)
+                node[pos=0.2, text=subjectnoun]{\strut studio}
+                node[pos=0.6, text=copula]{\strut was}
+                node[pos=0.85, text=subjectcomplement]{\strut filled};
+            \draw (-9, 8.75) -- (-9, 7.5);
+            \draw (-11, 8) -- (-9.5, 6.5)
+                node[sloped, pos=0.6, text=article]{\strut The};
+            \draw (-8, 8) -- (-6, 6)
+                node[sloped, pos=0.6, text=preposition]{\strut with};
+            \draw (-6, 6) -- (-2, 6)
+                node[pos=0.5, text=noun]{\strut odour};
+            \draw (-5.5, 6) -- (-4, 4.5)
+                node[sloped, pos=0.6, text=adjective]{\strut rich};
+            \draw (-4.3, 6) -- (-2.8, 4.5)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw (-3.1, 6) -- (-1.6, 4.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw (-1.6, 4.5) -- (0.5, 4.5)
+                node[pos=0.5, text=noun]{\strut roses};
+
+            \draw [loosely dotted] (-1, 4.5) -- (-1, 3.5);
+            \draw (-1, 3.5) -- (0, 3.5)
+                node[pos=0.55, text=conjunction]{\strut and};
+            \draw [loosely dotted] (0, 3.5) -- (0, 3);
+
+            \draw (-15, 3) -- (-7.5, 3)
+                node[pos=0.25, text=subjectnoun]{\strut scent};
+            \draw (-14.5, 3) -- (-12.5, 1)
+                node[sloped, pos=0.6, text=adjective]{\strut heavy};
+            \draw (-13.3, 3) -- (-11.8, 1.5)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw (-12.1, 3) -- (-10.5, 1.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw (-10.5, 1.5) -- (-8.5, 1.5)
+                node[pos=0.5, text=noun]{\strut lilac};
+            \draw (-9.5, 1.5) -- (-8, 0)
+                node[sloped, pos=0.6, text=article]{\strut the};
+
+            \draw (-7.5, 3) -- (-5.5, 1) -- (-7.5, -1);
+            \draw [loosely dotted] (-7.5, 3) -- (-7.5, -1)
+                node[sloped, pos=0.5, text=conjunction]{\strut or};
+
+            \draw (-15, -1) -- (-7.5, -1)
+                node[pos=0.3, text=subjectnoun]{\strut perfume};
+            \draw (-14.5, -1) -- (-12.5, -3)
+                node[above=-0.06cm, sloped, pos=0.6, text=adjective]{\strut delicate};
+            \draw (-14, -1.5) -- (-14.5, -2) -- (-13.2, -3.3)
+                node[sloped, pos=0.5, text=adverb]{\strut more};
+            \draw (-13.3, -1) -- (-11.8, -2.5)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw (-12.1, -1) -- (-10.5, -2.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw (-10.5, -2.5) -- (-7.5, -2.5)
+                node[pos=0.5, text=noun]{\strut thorn};
+            \draw (-10, -2.5) -- (-8.5, -4)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw (-8.8, -2.5) -- (-5.5, -5.8)
+                node[sloped, pos=0.55, text=adjective]{\strut pink-flowering};
+            
+            \draw (-0.75, 2.25) -- (0.75, 2.25)
+                node[pos=0.5, text=pronoun]{\strut there};
+            \draw (-5.5, 1) -- (2, 1)
+                node[pos=0.6, text=predicateverb]{\strut came};
+            \draw (-4, 1.75) -- (-4, 0.5);
+            \draw [loosely dotted] (-2, 1) -- (0.2, -1.2)
+                node[sloped, pos=0.5, text=conjunction]{\strut when};
+            \draw (0, 1) -- (2, -1)
+                node[sloped, pos=0.6, text=preposition]{\strut through};
+            \draw (2, -1) -- (4.5, -1)
+                node[pos=0.5, text=noun]{\strut door};
+            \draw (2.5, -1) -- (4, -2.5)
+                node[sloped, pos=0.6, text=adjective]{\strut open};
+            \draw (3.7, -1) -- (5.2, -2.5)
+                node[sloped, pos=0.6, text=article]{\strut the};
+
+            \draw (-6, -2) -- (2, -2)
+                node[pos=0.3, text=subjectnoun]{\strut wind}
+                node[pos=0.8, text=predicateverb]{\strut stirred};
+            \draw (-5.5, -2) -- (-3.5, -4)
+                node[sloped, pos=0.6, text=adjective]{\strut summer};
+            \draw (-4.3, -2) -- (-2.8, -3.5)
+                node[sloped, pos=0.6, text=adjective]{\strut light};
+            \draw (-3.1, -2) -- (-1.6, -3.5)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw (-1, -1.25) -- (-1, -2.5);
+            \draw (0, -2) -- (2, -4)
+                node[sloped, pos=0.6, text=preposition]{\strut amidst};
+            \draw (2, -4) -- (4.5, -4)
+                node[pos=0.5, text=noun]{\strut trees};
+            \draw (2.5, -4) -- (4, -5.5)
+                node[sloped, pos=0.6, text=article]{\strut the};
+            \draw (3.7, -4) -- (5.2, -5.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw (5.2, -5.5) -- (7, -5.5)
+                node[pos=0.5, text=noun]{\strut garden};
+            \draw (5.7, -5.5) -- (7.2, -7)
+                node[sloped, pos=0.6, text=article]{\strut the};
         \end{tikzpicture}
     \end{sentencediagram}
 \end{document}
