@@ -4,6 +4,76 @@
 \input{Definitions.tex}
 
 \begin{document}
+    \begin{sentencediagram}{0.5}{0.25}{Somewhere in la Mancha, in a place whose name I do not care to remember, a gentleman lived not long ago, one of those who has a lance and ancient shield on a shelf and keeps a skinny nag and a greyhound for racing.}{Miguel de Cervantes}{Don Quixote}
+        \begin{tikzpicture}
+            \draw (-3, 15) -- (3, 15)
+                node[pos=0.2, text=copula]{\strut (was)}
+                node[pos=0.7, text=pronoun]{\strut one};
+            \draw (-0.75, 15.75) -- (0, 15);
+            \draw (1.5, 15) -- (3, 13.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw (3, 13.5) -- (5, 13.5)
+                node[pos=0.5, text=pronoun]{\strut those};
+
+            \draw (2.5, 11.5) -- (5, 11.5)
+                node[pos=0.4, text=subjectnoun]{\strut who};
+            \draw (4.5, 12.25) -- (4.5, 11);
+
+            \draw (5, 11.5) -- (7.25, 13.75);
+            \draw (5, 11.5) -- (7.25, 9.25);
+            \draw [loosely dotted] (7.25, 9.25) -- (7.25, 13.75)
+                node[sloped, pos=0.5, text=conjunction]{\strut and};
+
+            \draw (7.25, 13.75) -- (11.25, 13.75)
+                node[pos=0.3, text=predicateverb]{\strut has};
+            \draw (10.25, 14.5) -- (10.25, 13.75);
+            \draw (8.25, 13.75) -- (9.75, 12.25)
+                node[sloped, pos=0.6, text=preposition]{\strut on};
+            \draw (9.75, 12.25) -- (11.75, 12.25)
+                node[pos=0.5, text=noun]{\strut shelf};
+            \draw (10.25, 12.25) -- (11.25, 11.25)
+                node[sloped, pos=0.65, text=article]{\strut a};
+
+            \draw (11.25, 13.75) -- (12.5, 15);
+            \draw (11.25, 13.75) -- (12.5, 12.5);
+            \draw [loosely dotted] (12.5, 12.5) -- (12.5, 15)
+                node[above=-0.1cm, sloped, pos=0.5, text=conjunction]{\strut and};
+
+            \draw (12.5, 15) -- (15.5, 15)
+                node[pos=0.5, text=directobject]{\strut lance};
+            \draw (13, 15) -- (14, 14)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw (12.5, 12.5) -- (15.5, 12.5)
+                node[pos=0.5, text=directobject]{\strut shield};
+            \draw (13.25, 12.5) -- (15.25, 10.5)
+                node[sloped, pos=0.6, text=adjective]{\strut ancient};
+
+            \draw (7.25, 9.25) -- (9.75, 9.25)
+                node[pos=0.4, text=predicateverb]{\strut keeps};
+            \draw (9.25, 10) -- (9.25, 9.25);
+
+            \draw (9.75, 9.25) -- (11, 10.5);
+            \draw (9.75, 9.25) -- (11, 8);
+            \draw [loosely dotted] (11, 8) -- (11, 10.5)
+                node[above=-0.1cm, sloped, pos=0.5, text=conjunction]{\strut and};
+
+            \draw (11, 10.5) -- (14, 10.5)
+                node[pos=0.5, text=directobject]{\strut nag};
+            \draw (11.5, 10.5) -- (13, 9)
+                node[sloped, pos=0.6, text=adjective]{\strut skinny};
+            \draw (12.75, 10.5) -- (13.75, 9.5)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw (11, 8.5) -- (14, 8.5)
+                node[pos=0.5, text=directobject]{\strut greyhound};
+            \draw (11.5, 8) -- (12.5, 7)
+                node[sloped, pos=0.6, text=article]{\strut a};
+            \draw (12.75, 8) -- (14.25, 6.5)
+                node[sloped, pos=0.6, text=preposition]{\strut for};
+            \draw (14.25, 6.5) -- (16.25, 6.5)
+                node[pos=0.5, text=verb]{\strut racing};
+        \end{tikzpicture}
+    \end{sentencediagram}
+
     \begin{sentencediagram}{2}{1.75}{Stately, plump Buck Mulligan came from the stairhead, bearing\\a bowl of lather on which a mirror and a razor lay crossed.}{James Joyce}{Ulysses}
         \begin{tikzpicture}
             \draw (-4, 6) -- (5, 6)
