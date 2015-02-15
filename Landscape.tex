@@ -18,10 +18,12 @@
             \draw (-2.5, 3) -- (1, -0.5)
                 node[sloped, pos=0.6, text=preposition]{\strut of};
 
-            \draw (5, 3) -- (6.5, 1.5)
-                node[sloped, pos=0.6, text=adverb]{\strut day};
-            \draw (5.5, 2.5) -- (5, 2) -- (6, 1)
-                node[above=-0.06cm, sloped, pos=0.5, text=pronoun]{\strut that};
+            \draw (4.5, 3) -- (6, 1.5)
+                node[sloped, pos=0.6, text=preposition]{\strut (on)};
+            \draw (6, 1.5) -- (8, 1.5)
+                node[pos=0.5, text=noun]{\strut day};
+            \draw (6.5, 1.5) -- (8, 0)
+                node[sloped, pos=0.6, text=adjective]{\strut that};
 
             \draw (1, -0.5) -- (4, -0.5);
             \draw (1, 0.8) -- (1.5, 0.8) -- (1.5, 0.5) -- (5, 0.5)
@@ -90,16 +92,16 @@
     \end{sentencediagram}
 
     \begin{sentencediagram}{1.75}{2}{It was a bright cold day in April, and the clocks were striking thirteen.}{George Orwell}{1984}
-        \begin{tikzpicture}[scale=1.2]
+        \begin{tikzpicture}
             \draw (-5, 1.75) -- (3, 1.75)
-                node[pos=.07, text=subjectnoun]{\strut It}
-                node[pos=.27, text=copula]{\strut was}
-                node[pos=.7, text=subjectcomplement]{\strut day};
+                node[pos=0.07, text=subjectnoun]{\strut It}
+                node[pos=0.27, text=copula]{\strut was}
+                node[pos=0.7, text=subjectcomplement]{\strut day};
             \draw (-3.75, 2.5) -- (-3.75, 1.25);
             \draw (-2.1, 2.5) -- (-1.35, 1.75);
-            \draw (-1.2, 1.75) -- (0.3, 0.25)
+            \draw (-1.2, 1.75) -- (0.6, -0.05)
                 node[above=-0.06cm, sloped, pos=0.6, text=adjective]{\strut cold};
-            \draw (-0.05, 1.75) -- (1.45, 0.25)
+            \draw (-0.05, 1.75) -- (1.75, -0.05)
                 node[above=-0.06cm, sloped, pos=0.55, text=adjective]{\strut bright};
             \draw (1, 1.75) -- (2.05, 0.7)
                 node[above=-0.06cm, sloped, pos=0.6, text=article]{\strut a};
@@ -108,20 +110,20 @@
 
             \draw[loosely dotted] (-2.8, 1.75) -- (-2.8, 0.7);
             \draw (-2.8, 0.7) -- (-1.15, 0.7)
-                node[pos=.5, text=conjunction]{\strut and};
+                node[pos=0.5, text=conjunction]{\strut and};
             \draw (3.1, 0.7) -- (5.4, 0.7)
-                node[pos=.5, text=noun]{\strut April};
+                node[pos=0.5, text=noun]{\strut April};
             \draw[loosely dotted] (-1.15, 0.7) -- (-1.15, -0.5);
 
             \draw (-5, -1.25) -- (5.5, -1.25)
-                node[pos=.1, text=subjectnoun]{\strut clocks}
-                node[pos=.39, text=copula]{\strut were}
-                node[pos=.6, text=predicateverb]{\strut striking}
-                node[pos=.87, text=directobject]{\strut thirteen};
+                node[pos=0.1, text=subjectnoun]{\strut clocks}
+                node[pos=0.39, text=copula]{\strut were}
+                node[pos=0.6, text=predicateverb]{\strut striking}
+                node[pos=0.87, text=directobject]{\strut thirteen};
             \draw (-1.85, -0.5) -- (-1.85, -1.8);
             \draw (2.5, -1.25) -- (2.5, -0.5);
-            \draw (-4, -1.25) -- (-2.25, -3.0)
-                node[sloped, pos=.5, text=article]{\strut the};
+            \draw (-4, -1.25) -- (-2.5, -2.75)
+                node[sloped, pos=0.6, text=article]{\strut the};
         \end{tikzpicture}
     \end{sentencediagram}
 
@@ -182,10 +184,12 @@
                 node[pos=0.75, text=directobject]{\strut beauty};
             \draw (-1.5, 3.75) -- (-1.5, 2.5);
             \draw (0.5, 3.75) -- (0.5, 3);
-            \draw (3, 3) -- (5, 1)
-                node[above=-0.06cm, sloped, pos=0.6, text=adverb]{\strut kind of};
-            \draw (3.5, 2.5) -- (3, 2) -- (4, 1)
-                node[above=-0.06cm, sloped, pos=0.55, text=adjective]{\strut that};
+            \draw (3, 3) -- (4.5, 1.5)
+                node[sloped, pos=0.6, text=preposition]{\strut of};
+            \draw (4.5, 1.5) -- (6.5, 1.5)
+                node[pos=0.5, text=noun]{\strut kind};
+            \draw (5, 1.5) -- (6.5, 0)
+                node[sloped, pos=0.6, text=adjective]{\strut that};
             \draw[loosely dotted] (1.5, 3) -- (2.25, 2.25) -- (-1.25, -1);
 
             \draw (-2.5, -2) -- (3.5, -2)
@@ -278,7 +282,7 @@
 
             \draw (-8, -3.5) -- (-2.5, -3.5)
                 node[pos=0.1, text=subjectnoun]{\strut I}
-                node[pos=0.35, text=modalverb]{\strut did}
+                node[pos=0.35, text=verb]{\strut did}
                 node[pos=0.6, text=predicateverb]{\strut know};
             \draw (-7, -2.75) -- (-7, -4);
             \draw (-3.75, -2.75) -- (-3.75, -3.5);
@@ -287,7 +291,7 @@
         \end{tikzpicture}
     \end{sentencediagram}
 
-    \begin{sentencediagram}{0.25}{0.5}{The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden,\\there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.}{Oscar Wilde}{The Picture of Dorian Gray}
+    \begin{sentencediagram}{0.25}{0.5}{The studio was filled with the rich odour of roses, and when the light summer\\wind stirred amidst the trees of the garden, there came through the open door the heavy\\scent of the lilac, or the more delicate perfume of the pink-flowering thorn.}{Oscar Wilde}{The Picture of Dorian Gray}
         \begin{tikzpicture}
             \draw (-12, 8) -- (-5, 8)
                 node[pos=0.2, text=subjectnoun]{\strut studio}
@@ -353,8 +357,9 @@
             \draw (-5.5, 1) -- (2, 1)
                 node[pos=0.6, text=predicateverb]{\strut came};
             \draw (-4, 1.75) -- (-4, 0.5);
-            \draw [loosely dotted] (-2, 1) -- (0.2, -1.2)
-                node[sloped, pos=0.5, text=conjunction]{\strut when};
+            \draw [loosely dotted] (-2, 1) -- (-0.7, -0.3)
+                node[sloped, pos=0.65, text=conjunction]{\strut when};
+            \draw [loosely dotted] (-0.7, -0.3) -- (-1.6, -1.2);
             \draw (0, 1) -- (2, -1)
                 node[sloped, pos=0.6, text=preposition]{\strut through};
             \draw (2, -1) -- (4.5, -1)
@@ -365,7 +370,7 @@
                 node[sloped, pos=0.6, text=article]{\strut the};
 
             \draw (-6, -2) -- (2, -2)
-                node[pos=0.3, text=subjectnoun]{\strut wind}
+                node[pos=0.45, text=subjectnoun]{\strut wind}
                 node[pos=0.8, text=predicateverb]{\strut stirred};
             \draw (-5.5, -2) -- (-3.5, -4)
                 node[sloped, pos=0.6, text=adjective]{\strut summer};
@@ -382,7 +387,7 @@
                 node[sloped, pos=0.6, text=article]{\strut the};
             \draw (3.7, -4) -- (5.2, -5.5)
                 node[sloped, pos=0.6, text=preposition]{\strut of};
-            \draw (5.2, -5.5) -- (7, -5.5)
+            \draw (5.2, -5.5) -- (7.5, -5.5)
                 node[pos=0.5, text=noun]{\strut garden};
             \draw (5.7, -5.5) -- (7.2, -7)
                 node[sloped, pos=0.6, text=article]{\strut the};
